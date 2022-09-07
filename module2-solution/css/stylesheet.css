@@ -1,5 +1,62 @@
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+body {
+	font-family: sans-serif;
+}
+h1 {
+	text-align: center;
+	margin-top: 15px;
+}
+p {
+	margin: 30px 0px 0px 0px;
+	padding: 15px;
+}
+.row {
+	/* tbd */
+	width: 100%;
+}
+.title {
+	margin: 0px 0px 0px auto;
+	border: solid black 2px;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	color: white;
+}
+#titleChicken {
+	background-color: red;
+}
+#titleBeef {
+	background-color: green;
+}
+#titleSushi {
+	background-color: blue;
+}
+.box {
+	border: solid black 2px;
+	margin: 15px;
+	background-color: lightgray;
+}
+.clmn-lg-4, .clmn-med-3, .clmn-sm-1 {
+	float: left;
+	width: 100%;
+}
 /* Breakpoint above 992px */
-
+@media (min-width: 992px){
+	.clmn-lg-4 {
+		/* tbd */
+		width: 33.3%;
+	}
+}
 /* breakpoint between 991px and 768px */
-
-/* breakpoint less than 767px */
+@media (max-width: 991px) and (min-width: 768px) {
+	.clmn-med-6 {
+		/* tbd */
+		width: 50%;
+	}
+} 
