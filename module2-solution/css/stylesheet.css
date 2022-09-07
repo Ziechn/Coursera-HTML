@@ -42,21 +42,25 @@ p {
 	margin: 15px;
 	background-color: lightgray;
 }
-.clmn-lg-4, .clmn-med-3, .clmn-sm-1 {
+.clmn-lg-4, .clmn-med-6, .clmn-sm-12 {
 	float: left;
 	width: 100%;
 }
 /* Breakpoint above 992px */
 @media (min-width: 992px){
 	.clmn-lg-4 {
-		/* tbd */
 		width: 33.3%;
 	}
 }
 /* breakpoint between 991px and 768px */
 @media (max-width: 991px) and (min-width: 768px) {
 	.clmn-med-6 {
-		/* tbd */
 		width: 50%;
 	}
 } 
+/* breakpoint less than 767px */
+@media (max-width: 767px){
+		.clmn-sm-12{
+			width: 100%;
+		}
+	}
